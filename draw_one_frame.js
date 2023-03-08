@@ -14,7 +14,7 @@ function draw_one_frame() {
 	var ypos = -260;
 
 
-
+	color(226,220,208);
 	rect(745, 0, 120, height);  //Makes the 4 big rectangles in the background
 
 	rect(530, 0, 120, height);
@@ -23,8 +23,8 @@ function draw_one_frame() {
 
 	rect(100, 0, 120, height);
 
-	strokeWeight(1);
-  translate(width/2, height/2);
+// 	strokeWeight(1);
+//   translate(width/2, height/2);
   for(var i=1;i> -5;i--){  //This creates the squares all over the page
 	  for(var j=1;j>-5;j--){ // This gives the y values for the squares
 		stroke(1);
