@@ -10,13 +10,23 @@ function draw_one_frame() {
 	a-=2;
 	b-=2;
 
-	var xpos = 265;
+	var xpos = 275;
 	var ypos = -260;
+
+
+
+	rect(745, 0, 120, height);  //Makes the 4 big rectangles in the background
+
+	rect(530, 0, 120, height);
+
+	rect(315, 0, 120, height);
+
+	rect(100, 0, 120, height);
 
 	strokeWeight(1);
   translate(width/2, height/2);
-  for(var i=1;i> -5;i--){
-	  for(var j=1;j>-5;j--){
+  for(var i=1;i> -5;i--){  //This creates the squares all over the page
+	  for(var j=1;j>-5;j--){ // This gives the y values for the squares
 		stroke(1);
 		rect(xpos*i, ypos*j, 100, 100);
 	  }
