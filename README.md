@@ -3,3 +3,4 @@
 
 Found a for loop that works. Unfortunately, I had to scrifice how big the squares were to make them fit on the page.
 
+
