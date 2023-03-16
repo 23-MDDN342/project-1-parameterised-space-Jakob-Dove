@@ -18,16 +18,18 @@ function draw_one_frame(cur_frac) {
   y+=2;
 	a-=2;
 	b-=2;
-	let myMap = map(cur_frac, 100, 240, 275, height)
+	let myMap = map(cur_frac, 0, 1, 0, width)
 	let xpos = 30; //third set of squares from the left
 	let xpos2 = 275; //far right set of squares
-	let xpos3 = 515;//second set of squares on the left
-	let xpos4 = 755;//far left set of squares
+	let xpos3 = 515; //second set of squares on the left
+	let xpos4 = 755; //far left set of squares
 	
-	let ypos = -200;
+	let ypos = -150;
 
 
 	color(226,220,208);
+
+	
 	rect(0, 0, 120, height);  //The far left rectangle
 
 	rect(240, 0, 120, height);	//The second from the left rectangle
