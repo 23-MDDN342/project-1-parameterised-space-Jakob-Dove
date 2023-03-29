@@ -1,6 +1,6 @@
 
 function draw_one_frame(cur_frac) {
-	const ease = new p5.Ease();
+	
 
 	fill(133,180, 250);//Light blue background
 	rect(0,0,width,height);
@@ -12,7 +12,6 @@ function draw_one_frame(cur_frac) {
 	   let grid_points3 = [//Borrowed the Grid points setup code from Timothy Mitchell's pyramid code https://23-mddn342.github.io/project-1-parameterised-space-mitchetimo4/draw_one_frame.js
 	   
 		6 * width,
-		// 2 * width,
 		4 * width,
 	   -0.0425 * width
 	  
@@ -30,12 +29,6 @@ function draw_one_frame(cur_frac) {
 	 	for(let y = 0; y < 6; y++){
 			for(let i=0; i<grid_points3.length-1; i++) {///Borrowed the  for loop code from Timothy Mitchell's pyramid code https://23-mddn342.github.io/project-1-parameterised-space-mitchetimo4/draw_one_frame.js
 				let cur_x_pos = map(cur_frac, 0, 2, grid_points3[i+1], grid_points3[i])//Borrowed the for loop code from Timothy Mitchell's pyramid code https://23-mddn342.github.io/project-1-parameterised-space-mitchetimo4/draw_one_frame.js
-
-					const ease_amount_across = ease.linear(cur_frac);
-
-					
-
-					console.log((cur_x_pos+height/4.5)*.45);
 
 					noStroke();
 					
